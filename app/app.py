@@ -11,12 +11,12 @@ num_registros = 1000
 caminho_arquivo = "../powerbi/dataset/dataset_ficticio.csv"
 
 
-ids = []
-nomes = []
-valores_venda = []
-valores_devolucao = []
-qtd_notas = []
-qtd_clientes = []
+id = []
+nome = []
+valor_venda = []
+valor_devolucao = []
+qtd_nota = []
+qtd_cliente = []
 
 
 for i in range(1, num_registros + 1):
@@ -28,21 +28,21 @@ for i in range(1, num_registros + 1):
     clientes = random.randint(1, 5000) 
 
  
-    ids.append(id_code)
-    nomes.append(nome)
-    valores_venda.append(valor_venda)
-    valores_devolucao.append(valor_devolucao)
-    qtd_notas.append(notas)
-    qtd_clientes.append(clientes)
+    id.append(id_code)
+    nome.append(nome)
+    valor_venda.append(valor_venda)
+    valor_devolucao.append(valor_devolucao)
+    qtd_nota.append(notas)
+    qtd_cliente.append(clientes)
 
 
 df = pd.DataFrame({
-    "ID": ids,
-    "Nome": nomes,
-    "Valor Venda": valores_venda,
-    "Valor Devolução": valores_devolucao,
-    "Qtd Notas": qtd_notas,
-    "Qtd Clientes": qtd_clientes
+    "ID": id,
+    "Nome": nome,
+    "Valor Venda": valor_venda,
+    "Valor Devolução": valor_devolucao,
+    "Qtd Notas": qtd_nota,
+    "Qtd Clientes": qtd_cliente
 })
 
 
